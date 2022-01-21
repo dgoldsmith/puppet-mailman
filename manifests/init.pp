@@ -116,7 +116,7 @@ class mailman (
   validate_re($smtp_hostname, '^[-a-zA-Z0-9]+\.[-a-zA-Z0-9\.]+$')
   validate_re($http_hostname, '^[-a-zA-Z0-9\.]+$')
   validate_bool($virtual_host_overview)
-  validate_re($smtp_max_rcpts, '[0-9]*')
+  validate_re("$smtp_max_rcpts", '[0-9]*')
 
   # Don't expose var_prefix as a parameter because no functionality depends on
   # it directly. It's only used to derive other parameters, like data_dir.
