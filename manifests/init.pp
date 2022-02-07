@@ -243,7 +243,7 @@ class mailman (
     ensure  => directory,
     owner   => 'root',
     group   => $mm_groupname,
-    mode    => '2771',
+    mode    => '2770',
     seltype => 'mailman_archive_t',
     require => File[$archive_dir],
   }
