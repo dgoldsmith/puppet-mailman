@@ -206,7 +206,7 @@ class mailman (
     content => "${site_pw_hash}\n",
     owner   => 'root',
     group   => $mm_groupname,
-    mode    => '0644',
+    mode    => '0640',
     seltype => 'mailman_data_t',
     require => File[$data_dir],
   }
