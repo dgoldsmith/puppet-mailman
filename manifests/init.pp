@@ -166,7 +166,7 @@ class mailman (
     ensure  => directory,
     owner   => $mm_username,
     group   => $mm_groupname,
-    mode    => '2770',
+    mode    => '2775',
     seltype => 'mailman_data_t',
     require => Package[$mm_package],
   }
@@ -174,7 +174,7 @@ class mailman (
     ensure  => directory,
     owner   => $mm_username,
     group   => $mm_groupname,
-    mode    => '2770',
+    mode    => '2775',
     seltype => 'mailman_log_t',
     require => Package[$mm_package],
   }
@@ -182,7 +182,7 @@ class mailman (
     ensure  => directory,
     owner   => $mm_username,
     group   => $mm_groupname,
-    mode    => '2770',
+    mode    => '2775',
     seltype => 'mailman_lock_t',
     require => Package[$mm_package],
   }
